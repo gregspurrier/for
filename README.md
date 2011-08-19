@@ -1,7 +1,7 @@
 # For
 ## Overview
 `For` is a Ruby library supporting list comprehensions similar to those found in Clojure and many other languages.
-It was developed as a whyday 2011 / LinkedIn August 2011 Hackday project.
+It was started as a whyday 2011 / LinkedIn August 2011 Hackday project.
 
 ## Examples
 `For` takes one or more sequence specifications and a block and returns
@@ -37,9 +37,10 @@ Conditions may also optionally be specified to the comprehension as a whole:
 
 ## Supported Rubies
 For has been tested with
-* Ruby 1.8.7
-* Ruby 1.9.2
-* JRuby 1.6.3
+
+- Ruby 1.8.7
+- Ruby 1.9.2
+- JRuby 1.6.3
 
 ## Copyright
 Copyright (c) 2011 Greg Spurrier. See LICENSE.txt for further details.
