@@ -1,11 +1,10 @@
-# For
-## Overview
-`For` is a Ruby library supporting list comprehensions similar to those found in Clojure and many other languages.
-It was started as a whyday 2011 / LinkedIn August 2011 Hackday project.
+# Overview
+`For` is a Ruby library providing list comprehensions similar to those found in Clojure and many other languages.
+It is my celebration of the the fact that the August 2011 LinkedIn Hackday coincided with _whyday 2011.
 
-## Examples
+# Examples
 `For` takes one or more sequence specifications and a block and returns
-and enumerable For::Comprehension object. When the comprehension is enumerated,
+an enumerable comprehension object. When the comprehension is enumerated,
 the block is executed once for each combination that can be formed by taking an element
 from each sequence:
 
@@ -35,12 +34,12 @@ Conditions may also optionally be specified to the comprehension as a whole:
     end.to_a
     # => [[1, 2], [1, 3], [1, 4], [2, 3], [2, 4], [3, 4]]
 
-## Supported Rubies
+# Supported Rubies
 For has been tested with
 
 - Ruby 1.8.7
 - Ruby 1.9.2
 - JRuby 1.6.3
 
-## Copyright
-Copyright (c) 2011 Greg Spurrier. See LICENSE.txt for further details.
+# License
+`For` is released under the MIT license. See License.txt for the details.
