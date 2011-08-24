@@ -8,7 +8,7 @@ an enumerable comprehension object. When the comprehension is enumerated,
 the block is executed once for each combination that can be formed by taking an element
 from each sequence:
 
-    For({ :x => (1..3) }, { :y => [:a, :b] }) do
+    For({ x: (1..3) }, { y: [:a, :b] }) do
       [x, y]
     end.to_a
     # => [[1, :a], [1, :b], [2, :a], [2, :b], [3, :a], [3, :b]]
@@ -16,8 +16,8 @@ from each sequence:
 Filter conditions may optionally be specified for the sequences:
 
     For(
-      { :x => (1..3), :where => Proc.new { x.odd? } },
-      { :y => [:a, :b] }
+      { x: (1..3), where: proc { x.odd? } },
+      { y: [:a, :b] }
     ) do
       [x, y]
     end.to_a
@@ -26,9 +26,9 @@ Filter conditions may optionally be specified for the sequences:
 Conditions may also optionally be specified to the comprehension as a whole:
 
     For(
-      { :x => (1..4) },
-      { :y => (1..4) },
-      :where => Proc.new { x < y }
+      { x: (1..4) },
+      { y: (1..4) },
+      where: proc { x < y }
     ) do
       [x, y]
     end.to_a
